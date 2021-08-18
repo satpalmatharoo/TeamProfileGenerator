@@ -41,3 +41,27 @@ THEN I am prompted to enter the intern’s name, ID, email, and school, and I am
 WHEN I decide to finish building my team
 THEN I exit the application, and the HTML is generated
 ```
+
+## Getting Started
+
+This homework will combine many of the skills we've covered so far. In addition to the User Story and Acceptance Criteria, we’ve provided some guidelines to help get started.
+
+Your application should use [Jest](https://www.npmjs.com/package/jest) for running the unit tests and [Inquirer](https://www.npmjs.com/package/inquirer) for collecting input from the user. The application will be invoked by using the following command:
+
+```bash
+node index.js
+```
+
+It is recommended that you start with a directory structure that looks like the following example:
+
+```md
+__tests__/			// jest tests
+  Employee.test.js
+  Engineer.test.js
+  Intern.test.js
+  Manager.test.js
+dist/               // rendered output (HTML) and CSS style sheet
+lib/				// classes
+src/				// template helper code
+index.js			// runs the application
+```
