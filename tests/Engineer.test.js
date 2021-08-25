@@ -7,4 +7,9 @@ describe('Engineer', () => {
         expect(kevin).toBeInstanceOf(Engineer);
     });
 
+    it('should get role of "Engineer"', () => {
+        const coolEnginner = new Engineer();
+        expect(coolEngineer).toBeInstanceOf(Engineer);
+    });
+
 });

@@ -7,4 +7,9 @@ describe('Intern', () => {
         expect(kevin).toBeInstanceOf(Intern);
     });
 
+    it('returns "school"', () => {
+        const UOB = new school();
+        expect(UOB).toReturn(school);
+    });
+
 });
