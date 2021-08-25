@@ -7,4 +7,9 @@ describe('Employee', () => {
         expect(kevin).toBeInstanceOf(Employee);
     });
 
+    it('should be an instance of "Employee"', () => {
+        const kevin = new Employee();
+        expect(kevin).toBeInstanceOf(Employee);
+    });
+
 });
