@@ -6,19 +6,23 @@ const { Engineer } = require("./lib/Engineer");
 
 const team = []; // Manager, Intern and Engineer
 
-// TODO:
-// add intern and engineer function for inquirer
-// change generateHtml so that it outs puts nicer html
+
+
+//generateHtml so that it outs puts nicer html
 
 const generateHtml = () => {
   const teamArrHtml = team.map(employee => {
-    return `<li>Name: ${employee.name} Role: ${employee.getRole()}</li>`
+    return `<li>Name: ${employee.name} Role: ${employee.getRole()} Id: ${employee.getId()} Email: ${employee.getEmail()}</li> `
   });
-  const teamHtml = teamArrHtml.join('');
+  const teamHtml = teamArrHtml.join("\n");
   const html = `
+  <ul>
+  <div class ="container-teamlist"
+
+ 
   
     ${teamHtml}
-
+  </ul>
   `
   fs.writeFile('./dist/index.html', html);
 };
@@ -74,7 +78,7 @@ const addManager = () => {
         name: "office",
       },
     ]).then(response => {
-      const newManager = new Manager(response.name, response.id, response.email, response.officeNumber);
+      const newManager = new Manager(response.name, response.id, response.email, response.office);
       team.push(newManager);
       console.log(team);
       menu();
@@ -144,7 +148,7 @@ const addIntern = () => {
             name: "Github",
           },
         ]).then(response => {
-          const newEngineer = new Engineer(response.name, response.id, response.email, response.github);
+          const newEngineer = new Engineer(response.name, response.id, response.email, response.Github);
           team.push(newEngineer);
           console.log(team);
           menu();
