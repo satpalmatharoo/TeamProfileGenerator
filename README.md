@@ -12,7 +12,7 @@ https://github.com/satpalmatharoo/TeamProfileGenerator
 
 
 ### Screenshot of Horiseon
-![Screenshot of Team Profile Generator](dist\profilegenscreenshot.png)
+![Screenshot of Team Profile Generator](./dist/profilegenscreenshot.png)
 
 
 
