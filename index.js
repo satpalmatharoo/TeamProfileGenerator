@@ -16,13 +16,11 @@ const generateHtml = () => {
   });
   const teamHtml = teamArrHtml.join("\n");
   const html = `
-  <ul>
-  <div class ="container-teamlist"
-
- 
+  
+  <link rel="stylesheet" href="./style.css">
   
     ${teamHtml}
-  </ul>
+  
   `
   fs.writeFile('./dist/index.html', html);
 };
