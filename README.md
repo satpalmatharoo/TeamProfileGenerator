@@ -1,17 +1,29 @@
-# TeamProfileGenerator
-This will allow for a dynamic summary of an engineering team
+# DESCRIPTION
+A helpful command line application allowing the user to create a dynamic summary containing information regarding members of a team.  
 
-## Apps Needed
+Table Of Contents
+ * Installation
+ * Usage
+ * Tech needed
+ * Tests
+
+## INSTALLATION
+npm i
 [Jest](https://www.npmjs.com/package/jest)
 [Inquirer](https://www.npmjs.com/package/inquirer)
 
-A helpful command line application using Node.js, that takes in information about employees on a team, then generates an HTML webpage that displays summaries for each person. 
+## USAGE
+
+node index.js
+
+## Tests
+npm test /JEST
 
 ## Website deployed at 
 https://github.com/satpalmatharoo/TeamProfileGenerator
 
 
-### Screenshot of Horiseon
+## Screenshot of HTML SAMPLE
 ![Screenshot of Team Profile Generator](./dist/profilegenscreenshot.png)
 
 
