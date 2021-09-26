@@ -7,20 +7,44 @@ const { Engineer } = require("./lib/Engineer");
 const team = []; // Manager, Intern and Engineer
 
 
-
-//generateHtml so that it outs puts nicer html
-
 const generateHtml = () => {
   const teamArrHtml = team.map(employee => {
-    return `<li>Name: ${employee.name} Role: ${employee.getRole()} Id: ${employee.getId()} Email: ${employee.getEmail()}</li> `
+    return `
+    
+    <div class="card">
+    <h1>${employee.getName()}</h1>
+    <p class="title">${employee.getRole()}</p>
+    <p class="title">${employee.getId()}</p>
+    <p class="title">${employee.getEmail()}</p>
+    <a href="#"><i class="fa fa-github"></i></a>
+    <a href="#"><i class="fa fa-envelope"></i></a>
+    <p><button>Contact</button></p>
+  </div>
+    `
   });
   const teamHtml = teamArrHtml.join("\n");
   const html = `
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+  </head> 
+  <body>
+
+  <div style="display: flex; flex-wrap: wrap;">
   
-  <link rel="stylesheet" href="./style.css">
+  ${teamHtml}
+
+  </div>
   
-    ${teamHtml}
-  
+  </body>
+  </html>
   `
   fs.writeFile('./dist/index.html', html);
 };
