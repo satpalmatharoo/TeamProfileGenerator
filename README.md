@@ -1,4 +1,6 @@
-# DESCRIPTION
+# Team Profile Generator
+
+## DESCRIPTION
 A helpful command line application allowing the user to create a dynamic summary containing information regarding members of a team.  
 
 Table Of Contents
@@ -7,12 +9,12 @@ Table Of Contents
  * Tech needed
  * Tests
 
-## INSTALLATION
+## Installation
 npm i
 [Jest](https://www.npmjs.com/package/jest)
 [Inquirer](https://www.npmjs.com/package/inquirer)
 
-## USAGE
+## Usage
 
 node index.js
 
@@ -24,7 +26,7 @@ https://github.com/satpalmatharoo/TeamProfileGenerator
 
 
 ## Screenshot of HTML SAMPLE
-![Screenshot of Team Profile Generator](./dist/profilegenscreenshot.png)
+![Screenshot of Team Profile Generator](dist\team1.png)
 
 
 
